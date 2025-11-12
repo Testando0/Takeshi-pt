@@ -76,7 +76,7 @@ VOLUME:  ▂▃▄▅▆▇ 100%
 
             // 6. Envia o áudio
             // URL da API de download (mantida a do seu exemplo, mas com encode do título)
-            const audioUrl = `https://kuromi-system-tech.onrender.com/api/play?query=${encodeURIComponent(firstResult.title)}`;
+            const audioUrl = `https://kuromi-system-tech.onrender.com/api/play?name=${encodeURIComponent(firstResult.title)}`;
             
             await sendAudioFromURL(
                 audioUrl,
